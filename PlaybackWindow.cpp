@@ -644,7 +644,7 @@ PlaybackWindow::onOpen(FXObject *, FXSelector, void*)
 #else
 	// Use the Fox File open dialog.
 	FXFileDialog *dlg = new FXFileDialog(this, "Open PCAP File");
-	dlg->setPatternList("TCPDump Files (*.dump,*.tcpdump,*.pcap)\nAll Files (*)");
+	dlg->setPatternList("TCPDump Files (*.dump,*.tcpdump,*.pcap,*.pcapng)\nAll Files (*)");
 	res = dlg->execute();
 	strncpy(filename, dlg->getFilename().text(), sizeof(filename));
 	filename[sizeof(filename)-1] = '\0';

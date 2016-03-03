@@ -30,7 +30,7 @@ distribution:
   sudo make install
 
 Run the software by running the following from the command line:
-  playcap
+  sudo playcap
 
 Mac OS X
 ---------
